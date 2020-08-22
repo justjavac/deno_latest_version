@@ -5,8 +5,8 @@ import versionInfo from "https://deno.land/x/version_info/mod.ts";
  *
  * @param mod
  */
-export default async function latestVersion(
-  mod: string,
-): Promise<string | null> {
-  return await versionInfo(mod)?.latest ?? null;
+async function latestVersion(mod: string): Promise<string | null> {
+  return (await versionInfo(mod))?.latest ?? null;
 }
+
+export default latestVersion;
