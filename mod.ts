@@ -1,4 +1,4 @@
-import versionInfo from "https://deno.land/x/latest_version/mod.ts";
+import versionInfo from "https://deno.land/x/version_info/mod.ts";
 
 /**
  * Get the latest version of Deno.
